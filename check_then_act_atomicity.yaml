@@ -1,0 +1,14 @@
+rules:
+  - id: AIK_AI_concurrency_issues
+    title: Detect concurrency and synchronization problems
+    prompt: |
+      Identify potential concurrency issues that could lead to race conditions, deadlocks, or data corruption in multi-threaded or distributed environments.
+
+      Focus on patterns where shared state might be accessed or modified without proper synchronization, especially in contexts involving money, user data, or critical business logic.
+
+      Use high confidence (>0.7) for clear synchronization problems that could impact data integrity or system reliability.
+
+    languages: ["python", "java", "javascript", "typescript", "go", "ruby"]
+    complexity: advanced
+    confidence_threshold: 0.7
+    priority: 9
