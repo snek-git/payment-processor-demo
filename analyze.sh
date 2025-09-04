@@ -31,10 +31,7 @@ echo ""
 
 echo "4. PYSONAR (SonarCloud):"
 echo "------------------------"
-pysonar \
-  --sonar-token=d0be60b1a6716539e2a496170006672f67e3a0c3 \
-  --sonar-project-key=snek-git_payment-processor-demo \
-  --sonar-organization=snek-git
+pysonar
 
 echo ""
 echo "=== Analysis Complete ==="
