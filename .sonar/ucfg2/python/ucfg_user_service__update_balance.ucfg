@@ -1,0 +1,82 @@
+
+'user_service.UserService.update_balanceA
+7/Users/snek/work/apax-temp/src/services/user_service.py? ?("2*½
+2@ @((Z
+X
+@ @(
+%1"__id*@
+
+__unknown_file ($*"
+user_service.UserService"
+dbig
+@ @((
+%2*"
+
+__unknown_file (
+
+%1*'
+
+__unknown_file (
+	
+user_id2get_user>
+<
+@ @((
+user"__id*"
+
+__unknown_file (
+
+%2K
+I
+A A(#
+%3"__id*1
+
+__unknown_file (*
+
+user"	
+balanceH
+F
+A A(,
+%4"__concat*
+A A(#
+
+%3*
+A& A(,
+
+
+amountK
+I
+A A(,
+
+user"	
+balance"__id*"
+
+__unknown_file (
+
+%4Z
+X
+B B(
+%5"__id*@
+
+__unknown_file ($*"
+user_service.UserService"
+dbb`
+B B(
+%6*"
+
+__unknown_file (
+
+%5*$
+
+__unknown_file (
+
+user2save*
+3*5
+3
+user_service.py"
+D D(
+implicit return:
+? ?($	
+user_id:
+?& ?(,
+amountB
+user_service.UserServiceH

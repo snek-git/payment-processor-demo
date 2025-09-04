@@ -1,44 +1,49 @@
-# Payment Processor Code Quality Demo
+# Payment Processor Race Condition Demo
 
-This codebase demonstrates the core issue from your payment processing function:
-- **Race condition**: Balance check → API charge → Balance update (not atomic)
-- **No rollback**: If email/DB fails after charging, money is lost
-- **PII logging**: User email in logs
+This minimal codebase demonstrates a critical race condition that static analysis tools (SonarQube, pylint, bandit) fail to detect.
 
-## Running Linters
+## The Issue
 
-```bash
-# Install dependencies
-pip install -r requirements.txt
+In `src/services/payment_processor.py`, the `process_payment()` function has a race condition:
 
-# Run linters
-pylint src/
-flake8 src/
-bandit -r src/
+```python
+def process_payment(self, user, amount):
+    # Check user can afford it
+    if user.balance >= amount:
+        # Log the attempt
+        log.info(f"Payment {amount} for user {user.email}")
+        
+        # Charge the payment
+        result = self.payment_api.charge(user.card_token, amount)
+        
+        # Update user balance
+        user.balance -= amount
+        db.save(user)
+        
+        # Send confirmation
+        email.send(user.email, f"Charged ${amount}")
+        
+        # Record transaction
+        db.save_transaction(user.id, amount, result.id)
+        
+        return {"success": True, "transaction": result.id}
+    
+    return {"success": False, "error": "Insufficient funds"}
 ```
 
-## Running SonarQube
+## The Problem
 
-```bash
-# Start SonarQube
-docker-compose up -d
+This code has **non-atomic operations** that can cause:
 
-# Wait ~1 minute, then access http://localhost:9000
-# Login: admin/admin
+1. **Double Charges**: Two concurrent requests can both pass the balance check before either updates it
+2. **Lost Money**: System failure after charging but before saving = money taken but balance not updated
+3. **Data Inconsistency**: If email/logging fails after charge, transaction state is corrupted
 
-# Install sonar-scanner
-brew install sonar-scanner  # Mac
-# Or download from https://docs.sonarqube.org/latest/analysis/scan/sonarscanner/
+## Why Tools Miss This
 
-# Generate token in SonarQube UI, then run:
-sonar-scanner -Dsonar.host.url=http://localhost:9000 -Dsonar.token=YOUR_TOKEN
-```
+Static analysis tools cannot detect:
+- Race conditions requiring understanding of concurrent execution
+- Business logic flaws about transaction atomicity
+- State management issues across service boundaries
 
-## Key Issue in `process_payment()`
-
-The function has non-atomic operations that can lead to:
-1. **Double charges** if concurrent requests
-2. **Lost money** if system fails between charge and DB save
-3. **Inconsistent state** if email/logging fails
-
-The linters catch some issues but miss the critical business logic flaws.
+These require understanding the **semantic meaning** of payment processing, not just syntax patterns.

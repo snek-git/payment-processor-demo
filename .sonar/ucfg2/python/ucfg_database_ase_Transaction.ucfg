@@ -1,0 +1,66 @@
+
+database.Transaction<
+0/Users/snek/work/apax-temp/src/utils/database.py‡ ‡("2*
+2
+ˆ ˆ(X
+V
+
+ˆ ˆ(
+database.Transaction"
+id"__id*"
+
+__unknown_file (
+
+idb
+`
+
+‰ ‰(#
+database.Transaction"	
+user_id"__id*'
+
+__unknown_file (
+	
+user_id`
+^
+
+Š Š("
+database.Transaction"
+amount"__id*&
+
+__unknown_file (
+
+
+amounth
+f
+
+‹ ‹($&
+database.Transaction"
+
+payment_id"__id**
+
+__unknown_file (
+
+
+payment_id*
+3*L
+3
+database.py&$
+Œ Œ
+%1"database.Transaction"
+Œ Œ
+
+%1:
+
+‡ ‡(
+id:
+
+‡ ‡("	
+user_id:
+
+‡$ ‡(*
+amount:
+
+‡, ‡(6
+
+payment_idB
+database.TransactionH

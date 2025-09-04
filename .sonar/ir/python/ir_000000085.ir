@@ -1,0 +1,34 @@
+
+0.03float
+	"premium"str
+0.01float
+
+0int
+0.05float
+
+
+"standard"str
+"basic"strselfA A(amountA A("	user_typeA$ A(-"y#
+!
+B B(fee"#id#:Bint*
+(
+C C(!"
+#binop ==#2==:Bbool&"$
+C C(! *C C(
+2E E("@6
+4
+D D(	fee"#dependent-value#*:Bfloat"V*
+(
+E E($"
+#binop ==#2==:
+Bbool&"$
+E E($ *E E(2G G("@6
+4
+F F(fee"#dependent-value#*:Bfloat"L*
+(
+G G(!"
+#binop ==#2==:Bbool"
+G G(! *G G("@6
+4
+H H(fee"#dependent-value#*:Bfloat"5!*fee	
+I I(*</Users/snek/work/apax-temp/src/services/payment_processor.py

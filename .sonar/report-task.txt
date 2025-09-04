@@ -1,0 +1,7 @@
+organization=snek-git
+projectKey=snek-git_payment-processor-demo
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.66856
+dashboardUrl=https://sonarcloud.io/dashboard?id=snek-git_payment-processor-demo
+ceTaskId=AZkUzzLQZL7uB_qcTAKk
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AZkUzzLQZL7uB_qcTAKk

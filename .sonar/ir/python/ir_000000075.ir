@@ -1,0 +1,42 @@
+
+	"pending"str
+"delivered"str
+"processing"str
+falsebool
+	"shipped"str
+
+0int
+"cancelled"str
+trueboolself/ /(
+new_status/ /(&	list"Ì7
+5
+0 0(Wvalid_statuses"#unknown-value#Blist&
+$
+0 0(W
+"
+#is-exact#:	Bbool
+
+0 0(W"
+#assume#:
+8
+6
+0 0(W"#set-field# __collection_size:Bint&
+$
+0 0(W"#array-add-last#:&
+$
+0 0(W"#array-add-last#:&
+$
+0 0(W"#array-add-last#:&
+$
+0 0(W"#array-add-last#:&
+$
+0 0(W"#array-add-last#:*
+(
+1 1('"
+#binop in#2in:Bbool"
+1 1(' *1 1(
+"<(
+&
+2 2("#set-field# status:
+3 3("
+4 4(*./Users/snek/work/apax-temp/src/models/order.py

@@ -1,0 +1,66 @@
+
+200int
+
+ 0int
+30int
+'"{self.base_url}/transactions"str
+	"user_id"str
+	"api_key"strselfA  A($user_idA& A(-list"ê$
+"
+D D(@"#new-object#Bdict 
+
+D D(&"	#map-set#:(
+&
+D3 D(?"#get-field# api_key: 
+
+D( D(?	"	#map-set#:!
+
+B F(	
+"#unknown-value#!
+
+B F(	"#unknown-value#!
+
+B F(	"#unknown-value#!
+
+B F(	"#unknown-value#!
+
+B F(	"#unknown-value#'
+%
+B F(	"#unknown-value#Bbool!
+
+B F(	"#unknown-value#!
+
+B F(	"#unknown-value#!
+
+B F(	"#unknown-value#!
+
+B F(	"#unknown-value#!
+
+B F(	"#unknown-value#!
+
+B F(	"#unknown-value#X
+V
+B F(	response"
+requests.apiget:
+Brequests.models.Response,
+*
+H H("#get-field# status_code:*
+(
+H H(&"
+#binop ==#2==:Bbool"
+H H(& *H H(
+"9%
+#
+I I(""?python-unknown?:
+I I(""º'
+%
+J J("#unknown-value#Blist&
+$
+J J("
+#is-exact#:Bbool
+
+J J("
+#assume#:8
+6
+J J(!"#set-field# __collection_size: Bint
+J J(*1/Users/snek/work/apax-temp/src/api/payment_api.py
