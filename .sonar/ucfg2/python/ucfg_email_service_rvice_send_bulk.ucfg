@@ -1,113 +1,0 @@
-
-$email_service.EmailService.send_bulk?
-5/Users/snek/work/apax-temp/src/utils/email_service.py" "("2*Ñ
-2# #(
-# #(
-%7"listD
-B
-# #(
-
-successful"__id*"
-
-__unknown_file (
-
-%7
-$ $(
-%8"list@
->
-$ $(
-failed"__id*"
-
-__unknown_file (
-
-%8*
-4
-6*ë
-4, ,(;
-, ,(;
-%1"dict™
-–
-, ,((
-%2"__mapSet*"
-
-__unknown_file (
-
-%1**
-
-__unknown_file (
-
-successful**
-
-__unknown_file (
-
-
-successful‘
-Ž
-,* ,(:
-%3"__mapSet*"
-
-__unknown_file (
-
-%1*&
-
-__unknown_file (
-
-failed*&
-
-__unknown_file (
-
-
-failed"
-, ,(;
-
-%1*Á
-6' '(,©¦
-' '(,
-%6*:
-
-__unknown_file (
-email_service.EmailService*)
-
-__unknown_file (
-
-	recipient*'
-
-__unknown_file (
-	
-message2send*
-7
-8*•
-7( ((,~|
-( ((,
-%4"list.append**
-
-__unknown_file (
-
-
-successful*)
-
-__unknown_file (
-
-	recipient2append*
-4
-6*‘
-8* *((zx
-* *((
-%5"list.append*&
-
-__unknown_file (
-
-
-failed*)
-
-__unknown_file (
-
-	recipient2append*
-4
-6:
-" "("
-
-recipients:
-"$ "(+	
-messageB
-email_service.EmailServiceH

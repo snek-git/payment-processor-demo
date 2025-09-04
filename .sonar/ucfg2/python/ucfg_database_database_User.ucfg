@@ -1,93 +1,0 @@
-
-database.User:
-0/Users/snek/work/apax-temp/src/utils/database.py| |("2*è
-2} }(O
-M
-} }(
-database.User"
-id"__id*"
-
-__unknown_file (
-
-idU
-S
-~ ~(
-database.User"
-email"__id*%
-
-__unknown_file (	
-
-email[
-Y
- ( 
-database.User"
-
-password"__id*(
-
-__unknown_file (
-
-
-passworda
-_
-
-Ä Ä($
-database.User"
-
-card_token"__id**
-
-__unknown_file (
-
-
-card_token[
-Y
-
-Å Å(
-database.User"	
-balance"__id*'
-
-__unknown_file (
-	
-balanceU
-S
-
-Ç Ç(
-database.User"
-role"__id*$
-
-__unknown_file (
-
-role_
-]
-
-É É("
-database.User"
-	is_active"__id*)
-
-__unknown_file (
-
-	is_active*
-3*E
-3
-database.py
-Ü Ü
-%1"database.User"
-Ü Ü
-
-%1:
-| |(
-id:
-| |( 
-email:
-|" |(*
-
-password:
-|, |(6
-
-card_token:
-|8 |(?	
-balance:
-|A |(E
-role:
-|G |(P
-	is_activeB
-database.UserH

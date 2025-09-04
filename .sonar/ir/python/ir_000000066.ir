@@ -1,52 +1,0 @@
-
-
-0int
-
-truebool
-"admin"str
-"write"str
-"read"str
-"moderator"str
-falseboolselfD D(userD D(#actionD% D(+list"T*
-(
-E E("
-#binop ==#2==:Bbool&"$
-E E( *E E(
-2G G("e%
-#
-F F("#get-field# role:*
-(
-F F('"
-#binop ==#2==:Bbool
-F F('"V*
-(
-G G(	"
-#binop ==#2==:Bbool&"$
-G G(	 *G G(2I I("
-H H(
-"L*
-(
-I I("
-#binop ==#2==:Bbool"
-I I( *I I("ß%
-#
-J J("#get-field# role:'
-%
-J  J(6"#unknown-value#Blist&
-$
-J  J(6"
-#is-exact#:Bbool
-
-J  J(6"
-#assume#:8
-6
-J  J(6"#set-field# __collection_size:Bint&
-$
-J  J(6"#array-add-last#:&
-$
-J  J(6"#array-add-last#:*
-(
-J J(6"
-#binop in#2in:Bbool
-J J(6"
-K K(*7/Users/snek/work/apax-temp/src/services/user_service.py

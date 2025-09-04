@@ -1,74 +1,0 @@
-
-database.Database.init_tables:
-0/Users/snek/work/apax-temp/src/utils/database.py ("2*Î
-2 (	W
-U
- (
-%1"__id*=
-
-__unknown_file (!*
-database.Database"
-cursor‹ˆ
- (	
-%2*"
-
-__unknown_file (
-
-%1*È
-
-__unknown_file («¨
-¥
-            CREATE TABLE IF NOT EXISTS users (
-                id INTEGER PRIMARY KEY,
-                email TEXT,
-                password TEXT,
-                card_token TEXT,
-                balance REAL,
-                role TEXT,
-                is_active INTEGER
-            )
-        2executeW
-U
- (
-%3"__id*=
-
-__unknown_file (!*
-database.Database"
-cursorÜÙ
- $(	
-%4*"
-
-__unknown_file (
-
-%3*™
-
-__unknown_file (üù
-ö
-            CREATE TABLE IF NOT EXISTS transactions (
-                id INTEGER PRIMARY KEY,
-                user_id INTEGER,
-                amount REAL,
-                payment_id TEXT,
-                timestamp INTEGER
-            )
-        2execute[
-Y
-& &(
-%5"__id*A
-
-__unknown_file (%*#
-database.Database"
-
-connection><
-& &( 
-%6*"
-
-__unknown_file (
-
-%52commit*
-3*1
-3
-database.py"
-( ((
-implicit returnB
-database.DatabaseH

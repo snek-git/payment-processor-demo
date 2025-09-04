@@ -1,37 +1,0 @@
-
-	"user_id"str
-"items"str
-"created_at"str
-	"total"str
-"status"strself ("°$
-"
- $("#new-object#Bdict(
-&
- ('"#get-field# user_id: 
-
- ('"	#map-set#:&
-$
-   (#"#get-field# items: 
-
-   (#"	#map-set#:&
-$
-! !(#
-"#get-field# total: 
-
-! !(#"	#map-set#:	
-'
-%
-" "(%"#get-field# status: 
-
-" "(%"	#map-set#:+
-)
-#" #(1"#get-field# created_at:.
-,
-# #(2"#dependent-value#*:Bstr 
-
-# #(2"	#map-set#:!
-
- ("#unknown-value#+
-)
- %(	"?python-unknown?:Bstr
- %(	*./Users/snek/work/apax-temp/src/models/order.py

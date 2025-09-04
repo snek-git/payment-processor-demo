@@ -1,39 +1,0 @@
-
-"price"str
-
-"quantity"str
-truebool
-
-0int
-
-falseboolself' '("q&
-$
-( (("#get-field# items:7
-5
-( (("
-builtinsiter*:Btyping.Iterator
-( (("V2
-0
-( (("
-builtins
-__has_next*:Bbool"
-( (( *( ((H"ž,
-*
-) -(item"
-builtinsnext*:"
- 
-) )("#array-read#:*
-(
-) )($	"
-#binop <=#2<=:Bbool"
-) )($	 *) )("
-- -("
-* *(
-"n"
- 
-+ +("#array-read#:(
-&
-+ +( "	#binop <#2<:Bbool"
-+ +(  *+ +("
-, ,(
-"*./Users/snek/work/apax-temp/src/models/order.py
