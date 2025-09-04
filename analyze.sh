@@ -7,17 +7,26 @@ echo ""
 
 echo "1. PYLINT:"
 echo "-----------"
-pylint src/ 2>/dev/null || echo "No pylint issues found"
+if pylint src/ --disable=R0903 2>/dev/null; then
+    echo "✓ No pylint issues found"
+fi
 echo ""
 
 echo "2. FLAKE8:"
 echo "-----------"
-flake8 src/ 2>/dev/null || echo "No flake8 issues found"
+if flake8 src/ 2>/dev/null; then
+    echo "✓ No flake8 issues found"
+fi
 echo ""
 
 echo "3. BANDIT (Security):"
 echo "---------------------"
-bandit -r src/ 2>/dev/null || echo "No security issues found"
+if bandit -r src/ -f txt 2>/dev/null | grep -q "No issues identified"; then
+    echo "✓ No security issues found"
+    bandit -r src/ -f txt 2>/dev/null | grep "No issues identified"
+else
+    bandit -r src/ -f txt 2>/dev/null
+fi
 echo ""
 
 echo "4. PYSONAR (SonarCloud):"

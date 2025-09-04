@@ -1,4 +1,9 @@
+"""Email service module."""
+
+
 class EmailService:
+    """Email service handler."""
+
     def send(self, recipient, message):
-        # Sends email
+        """Send email to recipient."""
         pass

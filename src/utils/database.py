@@ -1,16 +1,23 @@
+"""Database module for payment processing."""
+
+
 class Database:
+    """Database operations handler."""
+
     def save(self, user):
-        # Saves user to database
+        """Save user to database."""
         pass
-    
+
     def save_transaction(self, user_id, amount, payment_id):
-        # Records transaction
+        """Record transaction in database."""
         pass
 
 
 class User:
-    def __init__(self, id, email, balance, card_token):
-        self.id = id
+    """User model."""
+
+    def __init__(self, user_id, email, balance, card_token):
+        self.id = user_id
         self.email = email
         self.balance = balance
         self.card_token = card_token
